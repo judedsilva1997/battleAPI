@@ -2,7 +2,7 @@ import pandas as pd
 import mysql.connector
 import urllib.parse
 import os
-
+## Insert all unit entities first and then load all the battles
 
 mydb = mysql.connector.connect(
   host="localhost",

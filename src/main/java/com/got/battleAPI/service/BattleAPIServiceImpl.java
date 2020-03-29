@@ -19,13 +19,6 @@ import com.got.battleAPI.repository.BattleRepository;
 import com.got.battleAPI.repository.LocationRepository;
 
 
-/**
- * Service layer to fetch necessary data
- * @author Jude
- * 
- * 
- *
- */
 @Service
 public class BattleAPIServiceImpl implements BattleAPIService {
 	
