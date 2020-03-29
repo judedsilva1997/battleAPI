@@ -1,12 +1,13 @@
 import pandas as pd
 import mysql.connector
 import urllib.parse
+import os
 
 
 mydb = mysql.connector.connect(
   host="localhost",
-  user="user",
-  passwd="password",
+  user=os.getenv('python.datasource.username', "user"),
+  passwd= os.getenv('python.datasource.password', "password"),
   database="battles"
 )
 cursor = mydb.cursor()
