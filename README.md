@@ -15,14 +15,19 @@ An Spring Boot API to fetch GoT battles.
  4. Install the necessary python packages: `pip install -r requirements.txt`
  5. Set up db environment variables for python file:
 
->python.datasource.username=< username >
->python.datasource.password=< password >
+>python.datasource.username=<username>
+
+>python.datasource.password=<password>
+
  6. Run the CreateDB script
 >   python CreateDB.py
  7. Build boot app `gradlew bootJar`
  8. Set db environment variables for Boot app:
+
 >spring.datasource.username=user
+
 >spring.datasource.password=password
+
  10. Execute the jar file
  11. Run the dataLoader script:
 
